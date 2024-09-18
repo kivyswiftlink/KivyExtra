@@ -76,7 +76,7 @@ let package = Package(
         	name: "FFPyplayer", 
         	dependencies: [
         		.product(name: "PythonCore", package: "PythonCore"), 
-        		"FFMpeg"
+        		"FFMpeg", 
         		"libffpyplayer", 
         	], 
         	resources: [
@@ -94,7 +94,7 @@ let package = Package(
         	name: "MatPlotLib", 
         	dependencies: [
         		.product(name: "PythonCore", package: "PythonCore"), 
-        		"KiwiSolver"
+        		"KiwiSolver", 
         		"libmatplotlib", 
         	], 
         	resources: [
@@ -115,19 +115,19 @@ let package = Package(
         	linkerSettings: [
         	]
     	), 
-    	.binaryTarget(name: "libkiwisolver", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libkiwisolver.zip", checksum: "d1c0a98330981f7a55a249839ee928e359131d1cdceba1bc154886b3e75a189c"), 
-    	.binaryTarget(name: "libavdevice", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libavdevice.zip", checksum: "dc7acb4237fcf10fafd70beb70d99547ca7e9d7db49cce5dff9cc67907ed0c4b"), 
-    	.binaryTarget(name: "libavfilter", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libavfilter.zip", checksum: "7ef099cdc2b43c30f47889473b3b15434c696c6c458b9dd0ba2e0880b6a3d533"), 
-    	.binaryTarget(name: "libswresample", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libswresample.zip", checksum: "843b69f4a36a68b66e80afbc3bcd7f2fd8a7c3df4b4fa904e5926fafa8774060"), 
-    	.binaryTarget(name: "libavformat", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libavformat.zip", checksum: "90d681239e3cead9d1c66b48a5a4e3d57bbaf3aa2a8ef6becdb861d4ab81a483"), 
-    	.binaryTarget(name: "libswscale", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libswscale.zip", checksum: "b7dbf58840e88da28f6ccad2580152ee533c2374b6cf5bf181810fac04569fa9"), 
-    	.binaryTarget(name: "libavresample", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libavresample.zip", checksum: "7ecd9612c4da41fa4150cefe09c1d85374d98c942a8d7f37a21e35214eb3bf04"), 
-    	.binaryTarget(name: "libavutil", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libavutil.zip", checksum: "fe2cf5b3fdc64a7b49aa13d41ab153615b64a4c4a0f74721de213b92207b7ecd"), 
-    	.binaryTarget(name: "libavcodec", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libavcodec.zip", checksum: "baafe2b7399673cd19c5495f230dac85b93dcda62ba73cf5b4134fe06590a9c6"), 
-    	.binaryTarget(name: "libffpyplayer", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libffpyplayer.zip", checksum: "08402c22754629b8a6116e4522bdea5f5db8592227ded9b2ca36308f53208693"), 
-    	.binaryTarget(name: "libmatplotlib", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libmatplotlib.zip", checksum: "0d898ed2a4aac230d441c27e072702bbea6936d861b5b5a433dd22584ffc47d9"), 
-    	.binaryTarget(name: "libfreetype", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libfreetype.zip", checksum: "8e5c60f0d3fc882b6421ff74cb524a972b7c1e004a630081bd14e51cd8cae0c8"), 
-    	.binaryTarget(name: "libpillow", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libpillow.zip", checksum: "cc3ef4cda1a140a0e1c34ac42f39d1f4dc511f83d3c7b425c5505d62ead73226"), 
-    	.binaryTarget(name: "libjpeg", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.0/libjpeg.zip", checksum: "68d3380008d8cd74af3ff80753a33624a63aa5f0bef3d7cbdbd197aa7a1d29ab"), 
+    	.binaryTarget(name: "libkiwisolver", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libkiwisolver.zip", checksum: "9801bfb520e45432512e710c0da00dc52dc37d8ab44531f88ce9e97c3e40f8ed"), 
+    	.binaryTarget(name: "libavdevice", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libavdevice.zip", checksum: "06ca48f9ab1d8349cc4ff37def63b29815029cf62686709aacb9fb51143f32fb"), 
+    	.binaryTarget(name: "libavfilter", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libavfilter.zip", checksum: "9f58636142875381d0342914169e6e629134666e7e51dd9b3f5de35f01d87e29"), 
+    	.binaryTarget(name: "libswresample", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libswresample.zip", checksum: "cf72c7080e3bfa7b2b8ba40f65d1a0003b314e874154d85301e6fd107d17064d"), 
+    	.binaryTarget(name: "libavformat", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libavformat.zip", checksum: "688e941b6df6cc2c977b540b27fdc3014cd82d29e295fd9795bdff6591f38cd2"), 
+    	.binaryTarget(name: "libswscale", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libswscale.zip", checksum: "504e09547a52400b09a680ee96233c6201e64cc4f605277a247105e08598b0ce"), 
+    	.binaryTarget(name: "libavresample", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libavresample.zip", checksum: "928ce9f9524ab2c39196983ca7ba6c10376fbf491ec0891e3de0d151a079e495"), 
+    	.binaryTarget(name: "libavutil", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libavutil.zip", checksum: "c9176871284a9fe70aff74e49c78ee877187316e4ba3c870e4ee3bada27e1e81"), 
+    	.binaryTarget(name: "libavcodec", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libavcodec.zip", checksum: "3b9d5f20f80af5b3eece24e73376fbc07309bbc7b82002579d0363ad29bdfe97"), 
+    	.binaryTarget(name: "libffpyplayer", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libffpyplayer.zip", checksum: "c7816f73de51be3d6a541934fd421c3b7cf58ad048edee68b31559bd18d97f2b"), 
+    	.binaryTarget(name: "libmatplotlib", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libmatplotlib.zip", checksum: "6cd36743336c8e6947755214fbed9a623f8951bc534a13c5661158a6af45cb74"), 
+    	.binaryTarget(name: "libfreetype", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libfreetype.zip", checksum: "ebd8d38ae609ba54714f57fcc6a7087c09d10ea0c161f422e4ba30487c6fb6e4"), 
+    	.binaryTarget(name: "libpillow", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libpillow.zip", checksum: "ba0a24ba2013c53eb31a48b6b0d4cd0da9b84949a546eecaa064c0dfcaee9fa8"), 
+    	.binaryTarget(name: "libjpeg", url: "https://github.com/KivySwiftLink/KivyExtra/releases/download/311.0.1/libjpeg.zip", checksum: "4422a349b99fe183596f0b6dce62a1263150a82c28408e6e3b85ba4392d4370d"), 
     ]
 )
